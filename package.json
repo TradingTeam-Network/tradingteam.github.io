@@ -1,17 +1,22 @@
 {
-  "name": "task-app",
+  "name": "app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
+
     "start": "node src/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
     "test": "env-cmd -f ./config/test.env jest --watch --runInBand"
+
   },
   "jest": {
     "testEnvironment": "node"
   },
-  "author": "Josy",
+  "author": "Mr.Echo",
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
@@ -34,4 +39,5 @@
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
   }
+
 }
